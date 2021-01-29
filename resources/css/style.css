@@ -9,11 +9,30 @@ body{
 }
 
 #navbar, #footer{
-    background-color: rgb(253, 244, 231); 
+    background-color: #c09c5adc; 
 }
 
 #image-wrapper{
     background-color: black;
+}
+
+#navbar{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+#navbar a:hover{
+    color: #816303;
+}
+
+#navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
 #container{
@@ -33,9 +52,6 @@ body{
 #main{
     grid-area: main;
     min-height: 600px;
-    background-color: rgb(235, 221, 205); 
-
-
 }
 
 #footer{
@@ -49,9 +65,9 @@ body{
 }
 
 .footer-section{
-    border: 1px solid black;
     width: 320px;
-    height: 50px;
+    min-height: 100px;
+    text-align: center;
 }
 
 
