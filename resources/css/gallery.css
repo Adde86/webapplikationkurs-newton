@@ -15,8 +15,7 @@
 
 }
 
-#image-nav-buttonlist {
-
+#image-nav {
     list-style: none;
     padding: 10px;
     margin: 5px;
@@ -33,27 +32,101 @@
 }
 
 .image-wrapper {
-    border: 1px solid grey;
-    width: 300px;
-    margin: 5px;
+    border: 1px solid rgba(131, 129, 129, 0.5);
     cursor: pointer;
-    margin: auto;
+    margin: auto 5px;
+    flex: 1 1 200px; 
+    display: inline-block;
 }
 
+
 .image-wrapper img {
-    width: 100%;
+    width:100%;
+  
+    /* padding: 20px; */
+   
 }
 
 .image-full-screen {
     width: 100%;
     border: 5px solid rgba(0,0,0, 0.5);
     z-index: 1;
-    order: -1;
+    margin: auto;
+    flex: 0 0 100%;
+    align-self: center;
+    
 }
 
 #main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    
+    margin: 10px 0;
+   
 }
+
+#main .single-image {
+    display: block;
+    width: 100%;
+    border: 20px solid black;
+}
+
+.invisible {
+    display: none;
+}
+
+#image-nav-div {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        width: 100%;
+    }
+
+    #container {
+        grid-template-areas: 
+        "header header header header"
+        "aside aside aside aside"
+        "main main main main"
+        "footer footer footer footer"
+        ;
+    }
+
+    #aside {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body {
+        width: 100%;
+    }
+    #container {
+        grid-template-areas: 
+        "header header header header"
+        "aside aside aside aside"
+        "main main main main"
+        "footer footer footer footer"
+        ;
+    }
+
+    #main {
+        justify-content: space-evenly;
+    }
+
+    #navbar {
+        justify-content:space-between;
+        
+    }
+
+    #navbar a {
+        flex: 1 1;
+        font-size: 14px;
+        align-self: flex-start;
+    }
+
+}
+

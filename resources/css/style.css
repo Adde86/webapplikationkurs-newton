@@ -18,8 +18,6 @@ body{
 
 #navbar{
     display: flex;
-    float: left;
-    flex-wrap: wrap;
     width: 100%;
     padding: 10px;
 }
@@ -29,6 +27,7 @@ body{
 }
 
 #navbar a{
+
     margin-left: 20px;
     text-decoration: none;
     color: black;
@@ -59,15 +58,17 @@ body{
     grid-area: footer;
     min-height: 100px;
     align-items: stretch;
-    justify-content: left;
+    justify-content: center;
     flex-flow: row wrap;
 
 }
 
 .footer-section{
-    width: 320px;
     min-height: 100px;
-    
+    flex-basis: 150;
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
 }
 
 #footer ul li {
@@ -78,7 +79,6 @@ body{
 #footer ul li a {
     text-decoration: none;
 }
-
 
 
 
