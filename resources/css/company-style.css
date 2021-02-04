@@ -13,7 +13,7 @@ textarea{
 .sidebar-container{
     position: relative;
     width: 100%;
-    padding: 2rem;
+    padding: 32px;
     background-color:  #f6f8f9;
     overflow: hidden;
     display: flex;
@@ -27,7 +27,7 @@ textarea{
 }
 
 form{
-    padding: 2.3rem 2.2rem;
+    padding: 36px 36px;
     z-index: 10px;
     overflow: hidden;
     position: relative;
@@ -38,12 +38,12 @@ form{
     font-weight: 500;
     font-size: 24px;
     line-height: 1;
-    margin-bottom: 0.7rem;
+    margin-bottom: 12px;
 }
 
 .input-container{
     position: relative;
-    margin: 1rem 0;
+    margin: 16px 0;
 }
 
 .input{
@@ -51,17 +51,17 @@ form{
     outline: none;
     border: 2px solid #333;
     background: none;
-    padding: 0.6rem 1.2rem;
+    padding: 10px 20px;
     color: #333;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 15px;
     letter-spacing: 0.5px;
     border-radius: 25px;
     transition: 0.3s;
 }
 
 textarea.input{
-    padding: 0.8rem 1.2rem;
+    padding: 13px 20px;
     min-height: 150px;
     border-radius: 22px;
     resize: none;
@@ -73,9 +73,9 @@ textarea.input{
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    padding: 0 0.4rem;
+    padding: 0 9px;
     color: #333;
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: 400;
     pointer-events: none;
     z-index: 1000;
@@ -83,15 +83,15 @@ textarea.input{
 }
 
 .input-container.textarea label{
-    top: 1rem;
+    top: 17px;
     transform: translateY(0);
 }
 
 .btn{
-    padding: 0.6rem 1.3rem;
+    padding: 10px 20px;
     background-color: #333;
     border: 2px solid #333;
-    font-size: 0.95rem;
+    font-size: 15px;
     color:  #c09c5adc;
     line-height: 1;
     border-radius: 25px;
@@ -109,11 +109,11 @@ textarea.input{
 
 .input-container span{
     position: absolute;
-    top: o;
+    top: 0;
     left: 25px;
     transform: translateY(-50%);
-    font-size: 0.8rem;
-    padding: 0 0.4rem;
+    font-size: 13px;
+    padding: 0 9px;
     color: transparent;
     pointer-events: none;
     z-index: 500;
@@ -144,7 +144,7 @@ textarea.input{
     top: 0;
     transform: translateY(-50%);
     left: 25px;
-    font-size: 0.8rem;
+    font-size: 13px;
 }
 
 .input-container.focus span:before,
@@ -159,6 +159,11 @@ h2{
 
 p{
     margin: 20px 0 50px;
+}
+
+#image-section{
+    margin-top: 32px;
+    box-shadow: 0 0 10px 1px;
 }
 
 #container{
