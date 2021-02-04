@@ -7,13 +7,12 @@
 body,
 input,
 textarea{
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica neue', sans-serif;
 }
 
 .sidebar-container{
     position: relative;
     width: 100%;
-    min-height: 100vh;
     padding: 2rem;
     background-color:  #f6f8f9;
     overflow: hidden;
@@ -35,9 +34,9 @@ form{
 }
 
 .title{
-    color: #fff;
+    color: #333;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1;
     margin-bottom: 0.7rem;
 }
@@ -50,10 +49,10 @@ form{
 .input{
     width: 100%;
     outline: none;
-    border: 2px solid  #f6f8f9;
+    border: 2px solid #333;
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #fff;
+    color: #333;
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -75,7 +74,7 @@ textarea.input{
     left: 15px;
     transform: translateY(-50%);
     padding: 0 0.4rem;
-    color: #fafafa;
+    color: #333;
     font-size: 0.9rem;
     font-weight: 400;
     pointer-events: none;
@@ -90,8 +89,8 @@ textarea.input{
 
 .btn{
     padding: 0.6rem 1.3rem;
-    background-color: #fff;
-    border: 2px solid #f6f8f9;
+    background-color: #333;
+    border: 2px solid #333;
     font-size: 0.95rem;
     color:  #c09c5adc;
     line-height: 1;
@@ -104,7 +103,7 @@ textarea.input{
 
 .btn:hover{
     background-color: transparent;
-    color: #f6f8f9;
+    color: #333;
 
 }
 
@@ -128,7 +127,7 @@ textarea.input{
     opacity: 0;
     transition: 0.3s;
     height: 5px;
-    background-color: #a58210;
+    background-color: #c09c5adc;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -158,25 +157,60 @@ h2{
     margin: 20px;
 }
 
-#main{
+p{
+    margin: 20px 0 50px;
+}
+
+#container{
     display: grid;
-    grid-template-columns: repeat(2, fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-    "image-section image-section"
-    "text-section text-section";
+    "header header header header header"
+    "main main main sidebar sidebar"
+    "footer footer footer footer footer";
 }
 
-#image-section{
-    grid-area: image-section;
+#header{
+    grid-area: header;
+    min-height: 100px;
 }
 
-#text-section{
-    grid-area: text-section;
+#main{
+    grid-area: main;
+    min-height: 600px;
 }
 
-/* #sidebar{
+#sidebar{
     grid-area: sidebar;
-    background-color: #f6f8f9;
-}  */
+ 
+} 
+
+#footer{
+    display: flex;
+    grid-area: footer;
+    min-height: 100px;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.footer-section{
+    flex-basis: 200px;
+    flex-grow: 1;
+    align-self: left;
+}
+
+.footer-section:nth-of-type(2){
+    flex-grow: 3;
+}
+
+#footer ul li {
+    list-style: none;
+    margin: 5px 20px;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: black;
+}
 
  
