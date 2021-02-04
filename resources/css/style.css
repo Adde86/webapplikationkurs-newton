@@ -9,7 +9,7 @@ body{
 }
 
 #navbar, #footer{
-    background-color: #c09c5adc; 
+    background-color: #a58210; 
 }
 
 #image-wrapper{
@@ -63,14 +63,18 @@ body{
 }
 
 .footer-section{
-    width: 320px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    align-self: left;
+}
+
+.footer-section:nth-of-type(2){
+    flex-grow: 3;
 }
 
 #footer ul li {
     list-style: none;
     margin: 5px 20px;
-    transform: translate(20%);
-    
 }
 
 #footer ul li a {
