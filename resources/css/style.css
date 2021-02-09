@@ -65,7 +65,7 @@ body{
 
 .footer-section{
     min-height: 100px;
-    flex-basis: 150;
+    flex-basis: 150px;
     flex-grow: 1;
     align-self: center;
     text-align: center;

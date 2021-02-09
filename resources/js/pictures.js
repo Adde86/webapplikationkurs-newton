@@ -3,22 +3,31 @@ const interiorButton = document.getElementById("btn-interior");
 const main = document.getElementById("main");
 let imageList = 'interior';
 
+var mobilSize = window.matchMedia("(max-width: 375px)")
 
-let interior = ['./resources/images/altan1.jpg', './resources/images/altan2.jpg', './resources/images/altan3.jpg', './resources/images/shower1.jpg',
+
+
+let interior = [ './resources/images/kitchen.jpg', './resources/images/shower1.jpg',
  './resources/images/shower2.jpg', './resources/images/bathroom-sink.jpg']
 
- let exterior = ['./resources/images/altan1.jpg'];
+ let exterior = ['./resources/images/altan1.jpg', './resources/images/altan2.jpg',
+  './resources/images/altan3.jpg', './resources/images/uteservering.jpg'];
 
-loadPictures(interior);
+
+ smallScreenImages(mobilSize)
+mobilSize.addListener(smallScreenImages)
+//loadPictures(interior);
 
 exteriorButton.onclick = function(){
-    loadPictures(exterior)
     imageList = 'exterior'
+    smallScreenImages(mobilSize)
+    
 }
 
 interiorButton.onclick = function(){
-    loadPictures(interior);
     imageList = 'interior'
+    smallScreenImages(mobilSize)
+    
 }
 
 
@@ -153,6 +162,3 @@ function mobileImageView(images){
 
 }
 
-var mobilSize = window.matchMedia("(max-width: 375px)")
-smallScreenImages(mobilSize)
-mobilSize.addListener(smallScreenImages)
