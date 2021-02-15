@@ -14,7 +14,7 @@ h2{
     margin-top: 70px;
 }
 
-p{
+#text-section p{
     margin: 20px 0 40px;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
@@ -292,29 +292,69 @@ textarea.input{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* #image-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4";
-}
+@media screen and (max-width: 480px){
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+    }
 
-#img1{
-    grid-area: img1;
-}
+    #image-section img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 
-#img2{
-    grid-area: img2;
-}
+    #image-section{
+        background-color: black;
+    }
 
-#img3{
-    grid-area: img3;
-}
+    #text-section p{
+        font-size: 25px;
+        margin: 20px;;
+    }
 
-#img4{
-    grid-area: img4;
-}
-/*
+    #text-section h2{
+        font-size: 30px;
+        margin: 60px 20px 20px 20px;;
+    }
 
- 
+    .form{
+      width: 70%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .btn{
+        font-size: 25px;
+    }
+
+    .input-container span{
+        font-size: 30px;
+    }
+     
+    .input{
+        font-size: 25px;
+    }
+
+    .input-container.focus label {
+        font-size: 30px;
+    }
+
+    .input-container label{
+        font-size: 25px;
+    }
+
+    #navText p{
+       font-size: 30px;
+    }
+
+
+}
