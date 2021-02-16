@@ -20,7 +20,7 @@ h2{
     font-size: 18px;
 }
 
-.navbar, #footer{
+.navbar, #footer, #info-text{
     background-color: #c09c5adc; 
 }
 
@@ -28,7 +28,7 @@ h2{
     background-color: black;
 }
 
-.navbar{
+.navbar, #info-text{
     display: flex;
     float: left;
     flex-wrap: wrap;
@@ -72,26 +72,39 @@ h2{
 } 
 
 #footer{
-    display: flex;
     grid-area: footer;
+    display: grid;
     min-height: 100px;
-    align-items: stretch;
-    flex-flow: row wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  
+    "section1 section2 section3";
+    justify-items: center;
 }
 
-.footer-section{
+#footer-section1{
+    grid-area: section1;
+}
+
+#footer-section2{
+    grid-area: section2;
+}
+
+#footer-section3{
+    grid-area: section3;
+}
+/* .footer-section{
     flex-basis: 200px;
     flex-grow: 1;
     align-self: left;
-}
+} */
 
-.footer-section:nth-of-type(2){
+/* .footer-section:nth-of-type(2){
     flex-grow: 3;
-}
+} */
 
 #footer ul li {
     list-style: none;
-    margin: 5px 20px;
+    margin-top: 5px;
 }
 
 #footer ul li a {
@@ -292,69 +305,3 @@ textarea.input{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 480px){
-    #container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "sidebar"
-        "footer";
-    }
-
-    #image-section img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-
-    #image-section{
-        background-color: black;
-    }
-
-    #text-section p{
-        font-size: 25px;
-        margin: 20px;;
-    }
-
-    #text-section h2{
-        font-size: 30px;
-        margin: 60px 20px 20px 20px;;
-    }
-
-    .form{
-      width: 70%;
-    }
-
-    .title{
-        font-size: 30px;
-    }
-
-    .btn{
-        font-size: 25px;
-    }
-
-    .input-container span{
-        font-size: 30px;
-    }
-     
-    .input{
-        font-size: 25px;
-    }
-
-    .input-container.focus label {
-        font-size: 30px;
-    }
-
-    .input-container label{
-        font-size: 25px;
-    }
-
-    #navText p{
-       font-size: 30px;
-    }
-
-
-}

@@ -26,10 +26,9 @@ let image = document.createElement('img');
 image.style.height = "450px";
 imageSection.appendChild(image); 
 
-let navText = document.getElementById('navText');
+let infoText = document.getElementById('info-text');
 let p = document.createElement('p');
-p.style.fontSize = '18px';
-navText.appendChild(p);
+infoText.appendChild(p);
 
 imageRoller();
 
