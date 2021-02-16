@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -8,7 +10,7 @@ body{
     background-color: #f6f8f9;
 }
 
-.navbar, #footer, #imagenav{
+.navbar, #footer, #info-text{
     background-color: #c09c5adc; 
 }
 
@@ -16,7 +18,7 @@ body{
     background-color: black;
 }
 
-.navbar{
+.navbar, #info-text{
     display: flex;
     float: left;
     flex-wrap: wrap;
@@ -35,6 +37,11 @@ body{
     font-size: 18px;
 }
 
+.navbar .icon {
+    margin-left: auto;
+    position: relative;
+    font-size: 24px;
+}
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -52,13 +59,6 @@ body{
 #main{
     grid-area: main;
     min-height: 600px;
-   /*  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4"
-    "imgnav" "imgnav"
-    "text text"; */
 }
 
 #imagesection {
@@ -66,32 +66,14 @@ body{
     height: 450px;
     position: relative;
 
-   /*  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-   /*  "img1 img2"
-    "img3 img4" */
-    
-  /*  "imgnav" "imgnav"; */ 
 }
-
-/* #sec1{
-    grid-area: 'img1';
-}
-
-#sec2{
-    grid-area: 'img2';
-}
-
-#sec3{
-    grid-area: 'img3';
-}
-
-#sec4{
-    grid-area: 'img4';
-} */
+ 
 #imagesection img {
     margin-bottom: 0px;
+}
+
+#info-text {
+    font-size: 18px;
 }
 
 h2 {
@@ -100,36 +82,137 @@ h2 {
 
 #text-section{
     width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 #footer{
-    display: flex;
+    display: grid;
     grid-area: footer;
     min-height: 100px;
-    align-items: stretch;
-    justify-content: left;
-    flex-flow: row wrap;
-
+    grid-template-columns: (3, 1fr);
+    grid-template-areas: 
+    "section1 section2 section3";
+    justify-items: center;
 }
 
 #sidebar{
     grid-area: sidebar;
 }
 
-.footer-section{
-    width: 320px;
-    min-height: 100px;
+#footer-section-1{
+    grid-area: section1;
+    margin-left: 0px;
     
+}
+
+#footer-section-2{
+    grid-area: section2;
+}
+
+#footer-section-3 {
+    grid-area: section3;
 }
 
 #footer ul li {
     list-style: none;
-    margin: 5px 5px;
+    margin: 5px, 5px;
+}
+
+#footer-section-1 ul {
+    padding: 0;
 }
 
 #footer ul li a {
     text-decoration: none;
+    color: black;
 }
+/* hamburgare */
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+   
+ /* hamburgare */
+/*  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+.navbar #navlinks {
+display: none;
+} 
+
+.navbar a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+}
+
+.navbar a.icon {
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.active {
+background-color: #4CAF50;
+color: white;
+} */
+  /*  */
+
+
+/* Form */
 
 .sidebar-container{
     position: relative;
@@ -274,6 +357,7 @@ textarea.input{
       opacity: 1;     
 }
 
+/* Pictures */
 /* Next & previous buttons */
 .prev,
 .next {
@@ -303,9 +387,11 @@ textarea.input{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
-
-
-
-
+@media screen and (min-width: 769px){
+.navbar .icon {
+    display: none;
+}
+.mobile-container {
+    display: none;
+}
+}

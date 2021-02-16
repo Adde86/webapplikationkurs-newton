@@ -8,24 +8,32 @@ let imageArray = [["./resources/images/private/kitchen/kitchen1.jpg", "kök"], [
 ["./resources/images/private/bathroom/bathroom1.jpg", 'badrum'], ["./resources/images/private/bathroom/bathroom2.jpg", 'badrum'],
 ["./resources/images/private/pool/pool1.jpg", 'pool'], ["./resources/images/private/pool/pool2.jpg", 'pool'], ["./resources/images/private/stairs/stairs.jpg", 'trappa']];
 
-imagerollFunction();
+
 
 imagesection.appendChild(image);
+
+let navText = document.getElementById('info-text');
+let p = document.createElement('p');
+navText.appendChild(p);
+
+imagerollFunction();
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+//Loops images in array
 async function imagerollFunction() {
     while (counter < imageArray.length && roll) {
         image.src = imageArray[counter][0];
         image.alt = imageArray[counter][1];
+        p.innerText = imageArray[counter][1];
         counter++;
-        await sleep(1000);
+        await sleep(4000);
     }
 }
 
-// Next/previous controls
+//Function for buttons forward/backwards on pictures
 function plusSlides(n) {
     roll = false;
     showSlides(counter += n);

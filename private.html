@@ -2,9 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <link rel="stylesheet" href="./resources/css/style.css">
- -->    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./resources/css/private-style.css">
+    <link rel="stylesheet" href="./resources/css/mediaQueryPhone.css">
+    <link rel="stylesheet" href="./resources/css/mediaQueryiPad.css">
     <script
     src="https://kit.fontawesome.com/64d58efce2.js"
     crossorigin="anonymous"
@@ -22,11 +23,32 @@
                 <img src="./resources/images/DZ.png" width="150px" alt="logga">
             </div>
             <nav class="navbar">
-                <a href="#">Hem</a>
-                <a href="#">Företagskunder</a>
-                <a href="#">Privatkunder</a>
-                <a href="#">Bildgalleri</a>
-                <a href="#">Om oss</a>
+                <div id="navlinks">
+                    <a href="#">Hem</a>
+                    <a href="#">Företagskunder</a>
+                    <a href="#">Privatkunder</a>
+                    <a href="#">Bildgalleri</a>
+                    <a href="#">Om oss</a>
+                </div>
+                <!-- Simulate a smartphone / tablet -->
+                <div class="mobile-container">
+                    <!-- Top Navigation Menu -->
+                    <div class="topnav">
+                    <a href="#home" class="active">Logo</a>
+                    <div id="myLinks">
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </div>
             </nav>
         </header>
         <main id="main">
@@ -34,14 +56,10 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             </section>
-            <nav class='navbar'>
-                <a>Kök</a>
-                <a>Badrum</a>
-                <a>Pooler</a>
-                <a>Trappor</a>
-            </nav>
+            <div id= info-text>
+            </div>
             <section id="text-section">
-                <h2>Företagskunder</h2>
+                <h2>Privatkunder</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Saepe aspernatur nihil cumque mollitia facere nemo iste, cum tenetur incidunt 
                 ex quae expedita, itaque nobis molestiae error. Minus laborum vel maiores.
@@ -89,13 +107,7 @@
            </div>
        </aside>      
         <footer id="footer">
-            <section class="footer-section">
-                <ul>
-                    <li>Telephone 073-111 111 111</li>
-                    <li><a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a></li>
-                </ul>
-           </section>
-            <section class="footer-section">
+            <section id="footer-section-1">
                 <ul>
                     <li><a href="./index.html">Hem</a></li>
                     <li><a href="./company.html">Företagskunder</a></li>
@@ -103,8 +115,14 @@
                     <li><a href="./pictures.html">Bildgalleri</a></li>
                     <li><a href="./about.html">Om oss</a></li>
                 </ul>
+           </section>
+            <section id="footer-section-2">
+                <ul>
+                    <li><a id="#phone" href= "tel:+46731111111">Telephone 073-111 11 11</a></li>
+                    <li><a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a></li>
+                </ul>
             </section>
-            <section class="footer-section">
+            <section id="footer-section-3">
                 <ul id="social-links">
                     <li><a href="https://instagram.com/dz_gruppen_ab?igshid=1g4fh7uc2a89k" 
                         class="fa fa-instagram"> Instagram</a></li>
@@ -116,5 +134,6 @@
     </div>
     <script src="resources\js\offer-form.js"></script>
     <script src="resources\js\pictures.js"></script>
+    <script src="resources\js\navbar-menu.js"></script>
 </body>
 </html>
