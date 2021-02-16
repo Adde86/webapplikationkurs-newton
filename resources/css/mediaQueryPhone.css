@@ -55,11 +55,15 @@
     }
 
     .input-container span, #info-text p{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .input, .btn, .input-container.focus label, .input-container label{
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .input-container{
+        margin-top: 20px;
     }
 
     #footer ul li{
