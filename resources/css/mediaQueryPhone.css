@@ -82,4 +82,31 @@
         "section2 section3";
     }
 
+    .navbar {
+        overflow: hidden;
+        background-color: #c09c5adc;
+        position: relative;
+        height: auto;
+      }
+    
+    .navbar #navLinks{
+        display: none;
+      }
+      
+    .navbar a {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 26px;
+        display: block;
+    }
+      
+    .navbar a.icon {
+        background: #c09c5adc;
+        font-size: 26px;
+        margin-right: 10px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 }

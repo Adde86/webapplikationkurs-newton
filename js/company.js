@@ -42,15 +42,6 @@ async function imageRoller(){
     }
  }
 
- /* function pic(type) {
-    for(let i = 0; i < imageArray.length-1; i++){
-        roll = false;
-        if(imageArray[i][1] === type){
-            imageSlider(i);
-        }
-    }   
- } */
-
  function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -71,6 +62,15 @@ async function imageRoller(){
         p.innerText = imageArray[counter][1];
      }
 }
+
+  function menuFunction() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
 
 

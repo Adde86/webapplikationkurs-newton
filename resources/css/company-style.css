@@ -12,10 +12,11 @@ body{
 
 h2{
     margin-top: 70px;
+    margin-left: 10px;
 }
 
 #text-section p{
-    margin: 20px 0 40px;
+    margin: 20px 0 40px 10px;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
 }
@@ -32,8 +33,14 @@ h2{
     display: flex;
     float: left;
     flex-wrap: wrap;
+    justify-items: center;
+    min-height: 45px;
     width: 100%;
     padding: 10px;
+}
+
+.icon{
+    display: none;
 }
 
 .navbar a:hover{
@@ -92,15 +99,6 @@ h2{
 #footer-section3{
     grid-area: section3;
 }
-/* .footer-section{
-    flex-basis: 200px;
-    flex-grow: 1;
-    align-self: left;
-} */
-
-/* .footer-section:nth-of-type(2){
-    flex-grow: 3;
-} */
 
 #footer ul li {
     list-style: none;
