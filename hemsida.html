@@ -1,0 +1,160 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./resources/css/hemsida-style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="container">
+			<header id="header">
+				<div id="image-wrapper">
+					<img src="./resources/images/DZ.png" width="150px" alt="logga" />
+				</div>
+				<nav id="navbar">
+					<a href="#">Hem</a>
+					<a href="#">Företagskunder</a>
+					<a href="#">Privatkunder</a>
+					<a href="#">Bildgalleri</a>
+					<a href="#">Om oss</a>
+				</nav>
+			</header>
+			<main id="main">
+				<div class="content-section1">
+					<img
+						src="./resources/images/badrum.jpg"
+						width="960px"
+						height="300px"
+						alt="hemsida_bild"
+					/>
+				</div>
+				<section class="content-section2">
+					<ul>
+						<li>Kontakt : David</li>
+						<li>
+							Telefonnummer :<br />
+							073-720 04 84
+						</li>
+						<li>
+							<a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a>
+						</li>
+					</ul>
+				</section>
+				<section class="content-section3">
+					<h2 id="h2Title"></h2>
+					<p>
+						Vi erbjuder en bred kompetens och erfarna snickare. Vi utför bl.a.
+						ny-, om-, och tillbyggnader, reparationer, tak och fönsterbyten. Vi
+						vänder oss till privatpersoner och företag i Stockholm. Vi är en
+						flexibel byggfirma med kunden i fokus. Vi gör både stora och små
+						jobb och alla får samma höga service! Välkommen att kontakta oss för
+						fri offert eller rådgivning.
+					</p>
+				</section>
+				<section class="content-section4">
+					<div class="image1">
+						<a href="company.html">
+							<img
+								onmouseover="mouseOver(this)"
+								onmouseout="backToNormal(this)"
+								id="image"
+								class="image-size"
+								src="./resources/images/pool.jfif"
+								alt="company-photo"
+							/>
+						</a>
+						<div class="centered">Företagskunder</div>
+						<div
+							class="bottom-right"
+							onmouseover="textUnderImageWithHover(this)"
+							onmouseout="hideTextUnderImage(this)"
+						></div>
+					</div>
+					<div class="image2">
+						<a href="pictures.html">
+							<img
+								onmouseover="mouseOver(this)"
+								onmouseout="backToNormal(this)"
+								id="image1"
+								class="image-size"
+								src="./resources/images/unnamed.jpg "
+								alt="private-photo"
+							/>
+						</a>
+						<div class="centered">Privatkunder</div>
+					</div>
+					<div class="image3">
+						<a href="private.html">
+							<img
+								onmouseover="mouseOver(this)"
+								onmouseout="backToNormal(this)"
+								id="image2"
+								class="image-size"
+								src="./resources/images/ConstructionStock.jpg"
+								alt="pictures-photo"
+							/>
+						</a>
+						<div class="centered">Bildgalleri</div>
+					</div>
+					<div class="image4">
+						<a href="about.html">
+							<img
+								onmouseover="mouseOver(this)"
+								onmouseout="backToNormal(this)"
+								id="image3"
+								class="image-size"
+								src="./resources/images/photo-house.jpg "
+								alt="about-us-photo"
+							/>
+						</a>
+						<div class="centered">Om oss</div>
+					</div>
+				</section>
+			</main>
+			<footer id="footer">
+				<section class="footer-section">
+					<ul>
+						<li>Telephone 073-111 111 111</li>
+						<li>
+							<a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a>
+						</li>
+					</ul>
+				</section>
+				<section class="footer-section">
+					<ul>
+						<li><a href="./index.html">Hem</a></li>
+						<li><a href="./company.html">Företagskunder</a></li>
+						<li><a href="./private.html">Privatkunder</a></li>
+						<li><a href="./pictures.html">Bildgalleri</a></li>
+						<li><a href="./about.html">Om oss</a></li>
+					</ul>
+				</section>
+				<section class="footer-section">
+					<ul id="social-links">
+						<li>
+							<a
+								href="https://instagram.com/dz_gruppen_ab?igshid=1g4fh7uc2a89k"
+								class="fa fa-instagram"
+							>
+								Instagram</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/DZ-Entreprenad-AB-684684578284975/"
+								class="fa fa-facebook"
+							>
+								Facebook</a
+							>
+						</li>
+					</ul>
+				</section>
+				<script src="hemsida.js"></script>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #f6f8f9;
+}
+
+#navbar,
+#footer {
+	background-color: #c09c5adc;
+}
+
+#image-wrapper {
+	background-color: black;
+}
+
+#navbar {
+	display: flex;
+	float: left;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 10px;
+}
+
+#navbar a:hover {
+	color: #816303;
+}
+
+#navbar a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		'header header header header'
+		'main main main main'
+		'footer footer footer footer';
+}
+
+#header {
+	grid-area: header;
+	min-height: 100px;
+}
+
+#main {
+	grid-area: main;
+	min-height: 800px;
+	margin-bottom: 80px;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2);
+	grid-template-areas:
+		'content-section1 content-section1 content-section1'
+		'content-section2 content-section3 content-section4';
+}
+
+.content-section1 {
+	grid-area: content-section1;
+}
+
+.content-section2 {
+	grid-area: content-section2;
+	font-size: 18px;
+	margin-top: -10px;
+	padding: 20px;
+}
+
+.content-section3 {
+	grid-area: content-section3;
+	margin-top: -10px;
+	padding: 20px;
+}
+
+.content-section4 {
+	padding: 40px 0px 20px 20px;
+	grid-area: content-section4;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2);
+	grid-template-areas:
+		'image1 image2'
+		'image3 image4';
+	gap: 5px 5px;
+}
+
+.image1 {
+	grid-area: image1;
+}
+
+.image2 {
+	grid-area: image2;
+}
+
+.image3 {
+	grid-area: image3;
+}
+
+.image4 {
+	grid-area: image4;
+}
+.image1,
+.image2,
+.image3,
+.image4 {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+.content-section2 ul li {
+	list-style: none;
+	margin: 25px 0px 5px -45px;
+}
+
+.image-size {
+	display: block;
+	height: 200px;
+	width: 250px;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008cba;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+	bottom: 0;
+	height: 100%;
+}
+
+.text {
+	white-space: nowrap;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+#footer {
+	display: flex;
+	grid-area: footer;
+	min-height: 100px;
+	align-items: stretch;
+	justify-content: left;
+	flex-flow: row wrap;
+}
+
+.footer-section {
+	width: 320px;
+	min-height: 100px;
+}
+
+#footer ul li {
+	list-style: none;
+	margin: 5px 5px;
+}
+
+#footer ul li a {
+	text-decoration: none;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+	#main {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'content-section1 content-section1 content-section1 content-section1'
+			'content-section2 content-section2 content-section2 content-section2'
+			'content-section3 content-section3 content-section3 content-section3'
+			'content-section4 content-section4 content-section4 content-section4';
+	}
+	.content-section4 {
+		padding: 20px;
+		grid-area: content-section4;
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 'image1 image2 image3 image4';
+		gap: 5px 5px;
+	}
+	.image-size {
+		height: 150px;
+		width: 200px;
+	}
+	h2 {
+		font-size: 50px;
+	}
+	p {
+		font-size: 30px;
+	}
+	.content-section2 ul li {
+		font-size: 40px;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 360px) {
+	#main {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'content-section1 content-section1 content-section1 content-section1'
+			'content-section2 content-section2 content-section2 content-section2'
+			'content-section3 content-section3 content-section3 content-section3'
+			'content-section4 content-section4 content-section4 content-section4'
+			'content-section4 content-section4 content-section4 content-section4';
+	}
+	.content-section4 {
+		padding: 20px;
+		grid-area: content-section4;
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'image1 image2'
+			'image3 image4';
+		gap: 5px 5px;
+	}
+	.image-size {
+		height: 300px;
+		width: 450px;
+	}
+	.image1,
+	.image2,
+	.image3,
+	.image4 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 60px;
+	}
+	p {
+		font-size: 50px;
+	}
+	.content-section2 ul li {
+		font-size: 50px;
+	}
+}
