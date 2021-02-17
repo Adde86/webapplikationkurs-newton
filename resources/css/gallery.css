@@ -36,6 +36,10 @@ body{
     font-size: 18px;
 }
 
+a:visited {
+    color: blue;
+}
+
 #container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
