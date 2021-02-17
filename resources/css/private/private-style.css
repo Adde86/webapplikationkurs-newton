@@ -10,8 +10,13 @@ body{
     background-color: #f6f8f9;
 }
 
-.navbar, #footer, #info-text{
-    background-color: #c09c5adc; 
+#container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "header header header header header"
+    "main main main sidebar sidebar"
+    "footer footer footer footer footer";
 }
 
 #image-wrapper{
@@ -19,6 +24,7 @@ body{
 }
 
 .navbar, #info-text{
+    background-color: #c09c5adc; 
     display: flex;
     float: left;
     flex-wrap: wrap;
@@ -37,15 +43,6 @@ body{
     text-decoration: none;
     color: black;
     font-size: 18px;
-}
-
-#container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 
-    "header header header header header"
-    "main main main sidebar sidebar"
-    "footer footer footer footer footer";
 }
 
 #header{
@@ -73,6 +70,7 @@ body{
     font-size: 18px;
    
 }
+
 .icon{
     display: none;
 }
@@ -91,7 +89,12 @@ h2 {
     margin: 20px 0 40px 10px;
 }
 
+#sidebar{
+    grid-area: sidebar;
+}
+
 #footer{
+    background-color: #c09c5adc;
     display: grid;
     grid-area: footer;
     min-height: 100px;
@@ -99,10 +102,6 @@ h2 {
     grid-template-areas: 
     "section1 section2 section3";
     justify-items: center;
-}
-
-#sidebar{
-    grid-area: sidebar;
 }
 
 #footer-section-1{
@@ -278,7 +277,7 @@ textarea.input{
       opacity: 1;     
 }
 
-/* Pictures */
+/* Picture-slides */
 /* Next & previous buttons */
 .prev,
 .next {
@@ -296,21 +295,13 @@ textarea.input{
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   border-radius: 3px 0 0 3px;
   right:0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-@media screen and (min-width: 769px){
-.navbar-menu {
-    display:none;
-}
-}

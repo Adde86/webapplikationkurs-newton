@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px){
   /* hamburger menu */
-.navbar {
+  .navbar {
     overflow: hidden;
     background-color: #c09c5adc;
     position: relative;
@@ -8,34 +8,26 @@
     justify-content: center;
     }
     
-    .navbar #navlinks{
+  .navbar #navlinks{
     text-align: center;
     display: none;
     }
     
-    .navbar a {
+  .navbar a {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 26px;
     display: block;
     }
     
-    .navbar a.icon {
+  .navbar a.icon {
     background: #c09c5adc;
     font-size: 26px;
     margin-right: 10px;
     display: block;
     position: absolute;
-    right: 0;
+    right: 0; 
     top: 0;
     }
 
-    /*  */
-    #imagesection {
-        margin-left: 10px;
-    }
-    
-    #info-text {
-        margin-left: 10px;
-    }
 }
