@@ -26,7 +26,3 @@ function backToNormal(img) {
 function myFunction() {
 	confirm('Press a button!');
 }
-
-window.onload = function () {
-	confirm('Do you accept the use of cookies?');
-};
