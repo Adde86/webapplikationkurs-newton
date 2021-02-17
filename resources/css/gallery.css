@@ -58,7 +58,6 @@ body{
 #footer{
     display: flex;
     grid-area: footer;
-    min-height: 100px;
     align-items: stretch;
     justify-content: center;
     flex-flow: row wrap;
@@ -66,8 +65,8 @@ body{
 }
 
 .footer-section{
-    min-height: 100px;
-    flex-basis: 150px;
+
+    flex-basis: 200px;
     flex-grow: 1;
     align-self: center;
     text-align: center;
@@ -181,6 +180,10 @@ body{
         width: 100%;
     }
 
+ 
+    .footer-section {
+       flex-basis: auto;
+    }
 
 
     #navbar a {
@@ -197,6 +200,10 @@ body{
         "main main main main"
         "footer footer footer footer"
         ;
+    }
+
+    .footer-section {
+        text-align: left;
     }
 
     #aside {
@@ -230,12 +237,14 @@ body{
    
 
     #footer {
-        flex-flow: row nowrap;
+        margin-top:0px;
+        flex-flow: row wrap;
         justify-content: start;
     }
 
     .footer-section {
-        /* flex: 1 1 100px; */
+    
+        flex: 1 1 300px;
         font-size: 12px;
         align-self: flex-start;
         justify-self:left;
