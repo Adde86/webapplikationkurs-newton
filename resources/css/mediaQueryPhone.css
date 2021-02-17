@@ -15,61 +15,25 @@
     
     .navbar, #info-text{
     height: 50px;
+    margin: 0 0 0 0;
     }
 
     .icon {
         display: block;
     }
-
-    /* hamburgare */
-    .navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-      }
-    
-    .navbar #navlinks {
-    display: none;
-    } 
-    
-    .navbar a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    }
-    
-    .navbar a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    }
-    
-    .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    }
-    
-    .active {
-    background-color: #4CAF50;
-    color: white;
-    }
-      /*  */
     
     #imagesection img{
     display: block;
     width: 80%;
     margin: 0 auto auto;
-    margin-left: auto;
-    margin-right: auto;
+   /*  margin-left: auto;
+    margin-right: auto; */
     }
     
     #imagesection{
     background-color: black;
     margin-top: 0;
+    margin-left: 0;
     }
     
     #text-section p{
@@ -81,8 +45,8 @@
     #text-section h2{
     font-size: 45px;
     margin: 100px 20px 20px 20px;
-    }
-    
+    }   
+
     .form{
     width: 70%;
     }
