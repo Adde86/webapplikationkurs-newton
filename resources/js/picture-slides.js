@@ -6,7 +6,7 @@ let roll = true;
 
 let imageArray = [["./resources/images/private/kitchen/kitchen1.jpg", "Nybyggt kök i Södertälje"], ["./resources/images/private/kitchen/kitchen2.jpg", 'Modernt kök'],
 ["./resources/images/private/bathroom/bathroom1.jpg", 'Badrum i ljusa färger'], ["./resources/images/private/bathroom/bathroom2.jpg", 'Nya badrum på hotellet'],
-["./resources/images/private/pool/pool1.jpg", 'Modern pool'], ["./resources/images/private/pool/pool2.jpg", 'Nybyggd pool söder om Stockholm'], ["./resources/images/private/stairs/stairs.jpg", 'Nyinsatt trappa']];
+["./resources/images/private/pool/pool1.jpg", 'Modern pool'], ["./resources/images/private/pool/pool2.jpg", 'Nybyggd pool söder om Stockholm'], ["./resources/images/private/stairs/stairs.jpg", 'Modern trappa']];
 
 
 
