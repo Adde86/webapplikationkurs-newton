@@ -5,17 +5,12 @@
         grid-template-areas: 
         "header"
         "main"
-        "main"
         "sidebar"
         "footer";
     }
 
     #header img{
         width: 250px;
-    }
-
-    .navbar, #info-text{
-        height: 50px;
     }
 
     #image-section img{
@@ -33,13 +28,11 @@
 
     #text-section p{
         font-size: 35px;
-        margin: 20px;
-        margin-bottom: 40px;
     }
 
     #text-section h2{
         font-size: 45px;
-        margin: 100px 20px 20px 20px;
+        margin-top: 100px;
     }
 
     .form{
@@ -66,9 +59,12 @@
         margin-top: 20px;
     }
 
+    #image-section .prev, #image-section .next{
+        font-size: 50px;
+    }
+
     #footer ul li{
         font-size: 35px;
-        min-height: 50px;
     }
 
     #footer-section1{
@@ -81,32 +77,4 @@
         grid-template-areas:  
         "section2 section3";
     }
-
-    .navbar {
-        overflow: hidden;
-        background-color: #c09c5adc;
-        position: relative;
-        height: auto;
-      }
-    
-    .navbar #navLinks{
-        display: none;
-      }
-      
-    .navbar a {
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 26px;
-        display: block;
-    }
-      
-    .navbar a.icon {
-        background: #c09c5adc;
-        font-size: 26px;
-        margin-right: 10px;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
 }

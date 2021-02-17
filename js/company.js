@@ -19,7 +19,6 @@ let imageArray = [
     ["../resources/images/paddel/paddel4.jpg", "Ny disk på södertälje paddelhall"]];
     
 let counter = 0;
-let stop = 0;
 let roll = true;
 let imageSection = document.getElementById("image-section");
 let image = document.createElement('img');
