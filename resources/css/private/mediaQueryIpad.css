@@ -1,33 +1,128 @@
-@media screen and (max-width: 768px){
-  /* hamburger menu */
-  .navbar {
-    overflow: hidden;
-    background-color: #c09c5adc;
-    position: relative;
-    height: auto;
-    justify-content: center;
-    }
+@media only screen and (max-width: 768px) /* and (min-width: 481px) */{
+
+  body {
+    width: 100%;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+#header img{
+    width: 250px;
+}
+
+.navbar, #info-text{
+    height: 50px;
+    margin: 0 0 0 0;
+}
+
+.icon {
+    display: block;
+}
+
+#imagesection{
+    background-color: black;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#imagesection img{
+    display: block;
+    width: 80%;
+    margin: 0 auto auto;
+}
+
+#text-section p{
+    font-size: 24px;
+    margin: 30px 0 50px 20px;
+   
+}
+
+#text-section h2{
+    font-size: 30px;
+    margin: 100px 20px 20px 20px;
+}   
+
+.form{
+    width: 60%;
+}
+
+#sidebar{
+    margin: 50px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.input-container span, #info-text p{
+    font-size: 20px;
+}
     
-  .navbar #navlinks{
-    text-align: center;
+.input, .btn, .input-container.focus label, .input-container label{
+    font-size: 25px;
+}
+
+.input-container{
+  margin-top: 20px;
+}
+
+/* #footer ul li{
+    font-size: 35px;
+    min-height: 50px;
+}
+
+#footer-section-1{
     display: none;
-    }
-    
-  .navbar a {
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 26px;
-    display: block;
-    }
-    
-  .navbar a.icon {
-    background: #c09c5adc;
-    font-size: 26px;
-    margin-right: 10px;
-    display: block;
-    position: absolute;
-    right: 0; 
-    top: 0;
-    }
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "section2 section3";
+} */
+
+#footer{
+  padding-top: 10px;
+}
+
+  /* hamburger menu */
+.navbar {
+  overflow: hidden;
+  background-color: #c09c5adc;
+  position: relative;
+  height: auto;
+  justify-content: center;
+  }
+  
+.navbar #navlinks{
+  text-align: center;
+  display: none;
+  }
+  
+.navbar a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+  display: block;
+  }
+  
+.navbar a.icon {
+  background: #c09c5adc;
+  font-size: 24px;
+  margin-right: 10px;
+  display: block;
+  position: absolute;
+  right: 0; 
+  top: 0;
+  }
 
 }
