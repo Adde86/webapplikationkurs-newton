@@ -1,6 +1,6 @@
-// window.onload = function () {
-// 	confirm('Do you accept the use of cookies?');
-// };
+window.onload = function () {
+	confirm('Do you accept the use of cookies?');
+};
 
 let h2Title = document.getElementById('h2Title');
 h2Title.innerHTML = 'Är ni i behov av en byggfirma?';
@@ -33,17 +33,3 @@ function backToNormal(img) {
 		manipulationText[i].style.fontSize = '';
 	}
 }
-// function TextAffectImageSize() {
-// 	let manipulationImage = document.getElementsByClassName('image-size');
-// 	let manipulationText = document.getElementsByClassName('centered');
-// 	if (mouseOver()) {
-// 		img.style.width = '270px';
-// 		img.style.height = '220px';
-// 	} else {
-// 		img.style.width = '';
-// 		img.style.height = '';
-// 	}
-// }
-$('#img').hover(function () {
-	$('image-size').hemsida - style.css('height', '220px');
-});
