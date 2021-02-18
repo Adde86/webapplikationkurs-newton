@@ -1,6 +1,6 @@
 let imagesection = document.getElementById('imagesection');
 let image = document.createElement('img');
-image.style.height = '450px';
+image.style.height = '100%';
 let counter = 0;
 let roll = true;
 
