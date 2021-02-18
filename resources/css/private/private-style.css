@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Helvetica', 'sans-serif';
 }
 
 body{
@@ -19,9 +20,9 @@ body{
     "footer footer footer footer footer";
 }
 
-body, input, textarea{
-    font-family: 'Helvetica neue', 'sans-serif';
-}
+/* body, input, textarea{
+    font-family:'Helvetica', 'sans-serif';
+} */
 
 #image-wrapper{
     background-color: black;
@@ -70,10 +71,10 @@ body, input, textarea{
     margin-bottom: 0px;
 }
 
-#info-text {
+/* #info-text {
     font-size: 18px;
    
-}
+} */
 
 .icon{
     display: none;
@@ -84,13 +85,14 @@ h2 {
     margin-left: 10px;
 }
 
-#text-section{
+/* #text-section{
     width: 100%;
     font-size: 18px;
-}
+} */
 
 #text-section p {
     margin: 20px 0 40px 10px;
+    font-size: 18px;
 }
 
 #sidebar{
