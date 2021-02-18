@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./resources/css/private/private-style.css">
+    <link rel="stylesheet" href="./resources/css/private/mediaQueryPhone.css">
+    <link rel="stylesheet" href="./resources/css/private/mediaQueryiPad.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </script>
+    <title>private customers</title>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="image-wrapper">
+                <img src="./resources/images/DZ.png" width="150px" alt="logga">
+            </div>
+            <nav class="navbar">
+                <div id="navlinks">
+                    <a href="hemsida.html">Hem</a>
+                    <a href="company-index.html">Företagskunder</a>
+                    <a href="private.html">Privatkunder</a>
+                    <a href="pictures.html">Bildgalleri</a>
+                    <a href="about.html">Om oss</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+            </nav>
+        </header>
+        <main id="main">
+            <section id=imagesection>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </section>
+            <div id=info-text>
+            </div>
+            <section id="text-section">
+                <h2>Privatkunder</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe aspernatur nihil cumque mollitia facere nemo iste, cum tenetur incidunt
+                    ex quae expedita, itaque nobis molestiae error. Minus laborum vel maiores.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe aspernatur nihil cumque mollitia facere nemo iste, cum tenetur incidunt
+                    ex quae expedita, itaque nobis molestiae error. Minus laborum vel maiores.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe aspernatur nihil cumque mollitia facere nemo iste, cum tenetur incidunt
+                    ex quae expedita, itaque nobis molestiae error. Minus laborum vel maiores.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe aspernatur nihil cumque mollitia facere nemo iste, cum tenetur incidunt
+                    ex quae expedita, itaque nobis molestiae error. Minus laborum vel maiores.</p>
+            </section>
+        </main>
+        <aside id="sidebar">
+            <div class="sidebar-container">
+                <div class="form">
+                    <div class="contact-form">
+                        <form action="private.html" autocomplete="off">
+                            <h3 class="title">Kontakt för offert</h3>
+
+                            <div class="input-container">
+                                <input type="text" name="name" class="input" required>
+                                <label for="">Namn</label>
+                                <span>Namn</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" name="E-post" class="input" required>
+                                <label for="">E-post</label>
+                                <span>E-post</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" name="Telephone" class="input">
+                                <label for="">Telefonnummer</label>
+                                <span>Telephone</span>
+                            </div>
+                            <div class="input-container textarea">
+                                <textarea type="text" name="message" class="input" required></textarea>
+                                <label for="">Meddelande</label>
+                                <span>Meddelande</span>
+                            </div>
+                            <input type="submit" value="send" class="btn">
+                        </form>
+                    </div>
+                </div>
+        </aside>
+        <footer id="footer">
+            <section id="footer-section-1">
+                <ul>
+                    <li><a href="hemsida.html">Hem</a></li>
+                    <li><a href="company-index.html">Företagskunder</a></li>
+                    <li><a href="private.html">Privatkunder</a></li>
+                    <li><a href="pictures.html">Bildgalleri</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </section>
+            <section id="footer-section-2">
+                <ul>
+                    <li><a id="#phone" href="tel:+46731111111">Telefon: 073-111 11 11</a></li>
+                    <li><a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a></li>
+                </ul>
+            </section>
+            <section id="footer-section-3">
+                <ul id="social-links">
+                    <li><a href="https://instagram.com/dz_gruppen_ab?igshid=1g4fh7uc2a89k" class="fa fa-instagram">
+                            Instagram</a></li>
+                    <li><a href="https://www.facebook.com/DZ-Entreprenad-AB-684684578284975/" class="fa fa-facebook">
+                            Facebook</a></li>
+                </ul>
+            </section>
+
+        </footer>
+    </div>
+    <script src="resources/js/private.js"></script>
+    <script src="resources\js\offer-form.js"></script>
+    <script src="resources\js\picture-slides.js"></script>
+</body>
+
+</html>
