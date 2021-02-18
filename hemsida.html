@@ -16,19 +16,18 @@
 					<img src="./resources/images/DZ.png" width="150px" alt="logga" />
 				</div>
 				<nav id="navbar">
-					<a href="#">Hem</a>
-					<a href="#">Företagskunder</a>
-					<a href="#">Privatkunder</a>
-					<a href="#">Bildgalleri</a>
-					<a href="#">Om oss</a>
+					<a href="hemsida.html">Hem</a>
+					<a href="company.html">Företagskunder</a>
+					<a href="private.html">Privatkunder</a>
+					<a href="pictures.html">Bildgalleri</a>
+					<a href="about.html">Om oss</a>
 				</nav>
 			</header>
 			<main id="main">
 				<div class="content-section1">
 					<img
+						class="imageHeader"
 						src="./resources/images/badrum.jpg"
-						width="960px"
-						height="300px"
 						alt="hemsida_bild"
 					/>
 				</div>
@@ -37,7 +36,7 @@
 						<li>Kontakt : David</li>
 						<li>
 							Telefonnummer :<br />
-							073-720 04 84
+							073-111 11 11
 						</li>
 						<li>
 							<a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a>
@@ -56,8 +55,8 @@
 					</p>
 				</section>
 				<section class="content-section4">
-					<div class="image1">
-						<a href="company.html">
+					<div id="img" class="image1">
+						<a href="./company.html">
 							<img
 								onmouseover="mouseOver(this)"
 								onmouseout="backToNormal(this)"
@@ -66,16 +65,11 @@
 								src="./resources/images/pool.jfif"
 								alt="company-photo"
 							/>
-						</a>
-						<div class="centered">Företagskunder</div>
-						<div
-							class="bottom-right"
-							onmouseover="textUnderImageWithHover(this)"
-							onmouseout="hideTextUnderImage(this)"
-						></div>
+							<div class="centered">Företagskunder</div></a
+						>
 					</div>
 					<div class="image2">
-						<a href="pictures.html">
+						<a href="./private.html">
 							<img
 								onmouseover="mouseOver(this)"
 								onmouseout="backToNormal(this)"
@@ -84,11 +78,12 @@
 								src="./resources/images/unnamed.jpg "
 								alt="private-photo"
 							/>
-						</a>
-						<div class="centered">Privatkunder</div>
+
+							<div class="centered">Privatkunder</div></a
+						>
 					</div>
 					<div class="image3">
-						<a href="private.html">
+						<a href="pictures.html">
 							<img
 								onmouseover="mouseOver(this)"
 								onmouseout="backToNormal(this)"
@@ -97,11 +92,12 @@
 								src="./resources/images/ConstructionStock.jpg"
 								alt="pictures-photo"
 							/>
-						</a>
-						<div class="centered">Bildgalleri</div>
+
+							<div class="centered">Bildgalleri</div></a
+						>
 					</div>
 					<div class="image4">
-						<a href="about.html">
+						<a href="./about.html">
 							<img
 								onmouseover="mouseOver(this)"
 								onmouseout="backToNormal(this)"
@@ -110,15 +106,16 @@
 								src="./resources/images/photo-house.jpg "
 								alt="about-us-photo"
 							/>
-						</a>
-						<div class="centered">Om oss</div>
+
+							<div class="centered">Om oss</div></a
+						>
 					</div>
 				</section>
 			</main>
 			<footer id="footer">
 				<section class="footer-section">
 					<ul>
-						<li>Telephone 073-111 111 111</li>
+						<li>Telefonnummer: 073-111 11 11</li>
 						<li>
 							<a href="mailto:david@dzgruppen.se">Email: david@dzgruppen.se</a>
 						</li>
@@ -153,7 +150,7 @@
 						</li>
 					</ul>
 				</section>
-				<script src="hemsida.js"></script>
+				<script src="./resources/js/hemsida.js"></script>
 			</footer>
 		</div>
 	</body>
