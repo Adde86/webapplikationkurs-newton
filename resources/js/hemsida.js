@@ -7,22 +7,29 @@ h2Title.innerHTML = 'Är ni i behov av en byggfirma?';
 
 function mouseOver(img) {
 	let manipulationImage = document.getElementsByClassName('image-size');
+	let manipulationText = document.getElementsByClassName('centered');
+
 	for (let i = 0; i < manipulationImage.length; i++) {
 		manipulationImage[i].style.borderRadius = '8px';
 	}
-	img.style.width = '300px';
-	img.style.height = '250px';
+	img.style.width = '270px';
+	img.style.height = '220px';
+
+	for (let i = 0; i < manipulationText.length; i++) {
+		manipulationText[i].style.fontSize = '110%';
+	}
 }
 
 function backToNormal(img) {
 	let manipulationImage = document.getElementsByClassName('image-size');
+	let manipulationText = document.getElementsByClassName('centered');
 	for (let i = 0; i < manipulationImage.length; i++) {
 		manipulationImage[i].style.borderRadius = '';
 	}
 	img.style.width = '';
 	img.style.height = '';
-}
 
-function myFunction() {
-	confirm('Press a button!');
+	for (let i = 0; i < manipulationText.length; i++) {
+		manipulationText[i].style.fontSize = '';
+	}
 }
