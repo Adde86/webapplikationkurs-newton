@@ -79,7 +79,6 @@ async function imageRoller(){
 
 
 
-
     
     
     

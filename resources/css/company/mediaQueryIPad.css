@@ -1,4 +1,72 @@
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
+  #container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+  }
+
+  #header img{
+      width: 250px;
+  }
+
+  #image-section img{
+      display: block;
+      width: 80%;
+      margin: 0 auto auto;
+  }
+
+  #image-section{
+      background-color: black;
+      margin-top: 0;
+  }
+
+  #text-section p{
+      font-size: 26px;
+      margin: 30px 0 50px 20px;
+  }
+
+  #text-section h2{
+      font-size: 30px;
+      margin: 100px 20px 20px 20px;
+    }
+
+  .form{
+      width: 60%;
+  }
+
+  #sidebar{
+      margin: 50px;
+  }
+
+  .title{
+      font-size: 35px;
+  }
+
+  .input-container span, #info-text p{
+      font-size: 20px;
+  }
+
+  .input, .btn, .input-container.focus label, .input-container label{
+      font-size: 25px;
+  }
+
+  .input-container{
+      margin-top: 20px;
+  }
+
+  #image-section .prev, #image-section .next{
+      font-size: 35px;
+  }
+
+  #footer ul li{
+      font-size: 25px;
+      min-height: 50px;
+  }
+
     .navbar {
         overflow: hidden;
         background-color: #c09c5adc;
@@ -28,28 +96,4 @@
         right: 0;
         top: 0;
     }
-
-    #text-section p{
-    font-size: 26px;
-    margin: 30px 0 50px 20px;
-    }
-
-    #info-text {
-    font-size: 20px;  
-    }
-
-    #image-section .prev, #image-section .next{
-    font-size: 35px;
-    }
-
-    #text-section h2{
-    font-size: 30px;
-    margin: 80px 20px 20px 20px;
-    }
-
-    #footer ul li{
-    font-size: 25px;
-    min-height: 50px;
-    }
-
 }

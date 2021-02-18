@@ -1,44 +1,18 @@
 @media screen and (max-width: 480px){
-    #container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-      "header"
-      "main"
-      "sidebar"
-      "footer";
-    }
-
-    #header img{
-        width: 250px;
-    }
-
-    #image-section img{
-        display: block;
-        width: 80%;
-        margin: 0 auto auto;
-    }
-
-    #image-section{
-        background-color: black;
-        margin-top: 0;
-    }
-
     #text-section p{
         font-size: 35px;
     }
 
     #text-section h2{
         font-size: 45px;
-        margin-top: 100px;
     }
 
     .form{
-        width: 70%;
+        width: 65%;
     }
 
-    #sidebar{
-        margin: 50px;
+    .contact-form{
+        height: 600px;
     }
 
     .title{
@@ -53,17 +27,13 @@
         font-size: 25px;
     }
 
-    .input-container{
-        margin-top: 20px;
-    }
-
     #image-section .prev, #image-section .next{
         font-size: 50px;
     }
 
     #footer ul li{
         font-size: 35px;
-    }
+    } 
 
     #footer-section1{
         display: none;
