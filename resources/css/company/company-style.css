@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,
+input,
+textarea{
+    font-family: 'Helvetica', sans-serif;
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #f6f8f9;
+}
+
+h2{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+#text-section p{
+    margin: 20px 0 40px 10px;
+    font-size: 18px;
+}
+
+.navbar, #footer, #info-text{
+    background-color: #c09c5adc; 
+}
+
+#image-wrapper{
+    background-color: black;
+}
+
+.navbar, #info-text{
+    display: flex;
+    float: left;
+    justify-items: center;
+    min-height: 45px;
+    width: 100%;
+    padding: 10px;
+}
+
+.icon{
+    display: none;
+}
+
+.navbar a:hover{
+    color: #816303;
+}
+
+.navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "header header header header header"
+    "main main main sidebar sidebar"
+    "footer footer footer footer footer";
+}
+
+#header{
+    grid-area: header;
+    min-height: 100px;
+}
+
+#main{
+    grid-area: main;
+    min-height: 600px;
+}
+
+#sidebar{
+    grid-area: sidebar;
+ 
+} 
+
+#footer{
+    grid-area: footer;
+    display: grid;
+    min-height: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  
+    "section1 section2 section3";
+    justify-items: center;
+}
+
+#footer-section1{
+    grid-area: section1;
+}
+
+#footer-section2{
+    grid-area: section2;
+}
+
+#footer-section3{
+    grid-area: section3;
+}
+
+#footer ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-container{
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    background-color:  #f6f8f9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#image-section{
+    position: relative;
+    margin-top: 32px; 
+    height: 450px;
+    box-shadow: 0 0 10px 1px;
+}
+
+#text-section{
+    width: 100%;
+} 
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #c09c5adc;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+

@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px){
+    .navbar {
+        overflow: hidden;
+        background-color: #c09c5adc;
+        position: relative;
+        height: auto;
+        justify-content: center;
+      }
+    
+    .navbar #navLinks{
+        text-align: center;
+        display: none;
+      }
+      
+    .navbar a {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 26px;
+        display: block;
+    }
+      
+    .navbar a.icon {
+        background: #c09c5adc;
+        font-size: 26px;
+        margin-right: 10px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #text-section p{
+    font-size: 26px;
+    margin: 30px 0 50px 20px;
+    }
+
+    #info-text {
+    font-size: 20px;  
+    }
+
+    #image-section .prev, #image-section .next{
+    font-size: 35px;
+    }
+
+    #text-section h2{
+    font-size: 30px;
+    margin: 80px 20px 20px 20px;
+    }
+
+    #footer ul li{
+    font-size: 25px;
+    min-height: 50px;
+    }
+
+}
