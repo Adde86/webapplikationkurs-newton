@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body,
 input,
 textarea{
@@ -20,6 +19,10 @@ body{
 h2{
     margin-top: 70px;
     margin-left: 10px;
+}
+
+#image-wrapper img{
+    width: 150px;  
 }
 
 #text-section p{
@@ -39,7 +42,7 @@ h2{
     display: flex;
     float: left;
     justify-items: center;
-    min-height: 45px;
+    min-height: 40px;
     width: 100%;
     padding: 10px;
 }

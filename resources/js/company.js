@@ -22,7 +22,7 @@ let counter = 0;
 let roll = true;
 let imageSection = document.getElementById("image-section");
 let image = document.createElement('img');
-image.style.height = "450px";
+image.style.height = "100%";
 imageSection.appendChild(image); 
 
 let infoText = document.getElementById('info-text');
@@ -70,7 +70,6 @@ async function imageRoller(){
       x.style.display = "block";
     }
   }
-
 
 
 
