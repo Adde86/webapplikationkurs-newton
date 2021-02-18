@@ -74,22 +74,6 @@
   margin-top: 20px;
 }
 
-/* #footer ul li{
-    font-size: 35px;
-    min-height: 50px;
-}
-
-#footer-section-1{
-    display: none;
-}
-
-#footer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "section2 section3";
-} */
-
 #footer{
   padding-top: 10px;
 }
@@ -117,7 +101,7 @@
   
 .navbar a.icon {
   background: #c09c5adc;
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 10px;
   display: block;
   position: absolute;

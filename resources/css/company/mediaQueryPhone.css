@@ -1,68 +1,62 @@
 @media screen and (max-width: 480px){
-    #container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-      "header"
-      "main"
-      "sidebar"
-      "footer";
-    }
-
-    #header img{
-        width: 250px;
-    }
-
-    #image-section img{
-        display: block;
-        width: 80%;
-        margin: 0 auto auto;
-    }
-
-    #image-section{
-        background-color: black;
-        margin-top: 0;
-    }
-
-    #text-section p{
-        font-size: 35px;
-    }
-
-    #text-section h2{
-        font-size: 45px;
-        margin-top: 100px;
-    }
-
     .form{
-        width: 70%;
+        width: 100%;
     }
 
-    #sidebar{
-        margin: 50px;
+    .navbar a.icon {
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
     }
 
     .title{
-        font-size: 40px;
+        font-size: 20px;
+    }
+
+    #text-section h2{
+        font-size: 26px;
+        margin: 70px 20px 20px 20px;
+    }
+
+    #text-section p{
+        font-size: 20px;
+        margin: 30px 0 50px 20px;
+    }
+
+    #image-wrapper img{
+       width: 120px;
+    }
+
+    #image-section{
+        height: 220px;
     }
 
     .input-container span, #info-text p{
-        font-size: 30px;
+        font-size: 16px;
     }
-
+  
     .input, .btn, .input-container.focus label, .input-container label{
+        font-size: 16px;
+    }
+  
+    .input-container{
+        margin-top: 18px;
+    }
+  
+    #image-section .prev, #image-section .next{
         font-size: 25px;
     }
-
-    .input-container{
-        margin-top: 20px;
-    }
-
-    #image-section .prev, #image-section .next{
-        font-size: 50px;
-    }
-
+  
     #footer ul li{
-        font-size: 35px;
+        font-size: 15px;
+    }
+  
+    .sidebar-container{
+        padding: 0;
+        box-shadow: 0 0 20px 1px;
     }
 
     #footer-section1{
@@ -74,5 +68,11 @@
        grid-template-columns: repeat(2, 1fr);
        grid-template-areas:  
        "section2 section3";
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .sidebar-container{
+        display: none;
     }
 }
