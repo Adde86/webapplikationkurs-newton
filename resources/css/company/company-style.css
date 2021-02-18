@@ -8,7 +8,7 @@
 body,
 input,
 textarea{
-    font-family: 'Helvetica neue', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 body{
@@ -38,7 +38,6 @@ h2{
 .navbar, #info-text{
     display: flex;
     float: left;
-    flex-wrap: wrap;
     justify-items: center;
     min-height: 45px;
     width: 100%;
@@ -130,15 +129,9 @@ h2{
 
 #image-section{
     position: relative;
-    margin-top: 30px;
-    box-shadow: 0 0 10px 1px;
-    justify-content: stretch;
-}
-
-#image-section{
-    width: 100%;
+    margin-top: 32px; 
     height: 450px;
-    margin-top: 32px;;
+    box-shadow: 0 0 10px 1px;
 }
 
 #text-section{

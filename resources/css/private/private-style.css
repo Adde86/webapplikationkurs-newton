@@ -37,7 +37,6 @@ body{
     padding: 10px;
     justify-items: center;
     min-height: 45px;
-    
 }
 
 .navbar a:hover{
@@ -240,7 +239,7 @@ textarea.input{
 
 .input-container span{
     position: absolute;
-    top: o;
+    top: 0;
     left: 25px;
     transform: translateY(-50%);
     font-size: 13px;
