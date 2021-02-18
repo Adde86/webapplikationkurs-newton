@@ -1,4 +1,7 @@
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
+  body{
+    width: 100%;
+  }
   #container{
     display: grid;
     grid-template-columns: 1fr;
@@ -63,8 +66,7 @@
   }
 
   #footer ul li{
-      font-size: 25px;
-      min-height: 50px;
+      font-size: 20px;
   }
 
     .navbar {
@@ -89,7 +91,7 @@
       
     .navbar a.icon {
         background: #c09c5adc;
-        font-size: 26px;
+        font-size: bold 18px;
         margin-right: 10px;
         display: block;
         position: absolute;
