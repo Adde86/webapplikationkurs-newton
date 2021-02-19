@@ -1,16 +1,6 @@
 @media only screen and (max-width: 480px){
-    #container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "sidebar"
-        "footer";
-    }
     #main {
-        height:300px;
+        height:400px;
     }
 
     #info-text {
@@ -39,20 +29,17 @@
         height: 100%;
     }
     #text-section p{
-        font-size: 15px;
-        margin-bottom: 0;
-        margin-top: 10px;
+        font-size: 16px;
+        margin: 10px 0 60px 20px;
     }
     
     #text-section h2{
         font-size: 20px;
-        margin: 40px 20px 20px 20px;
+        margin: 50px 20px 20px 20px;
     } 
 
     .form{
         width: 100%;
-        height: 100%;
-        margin-top: 0px;
     }
     
     .title{
@@ -71,13 +58,14 @@
         height:500px;
     }
 
+
     #sidebar{
         min-height:400px;
-        margin-top:0;
     }
+
     .sidebar-container{
         padding:0;
-        height: 500px;
+        box-shadow: 0 0 20px 1px;
     }
      
     #footer ul li{
